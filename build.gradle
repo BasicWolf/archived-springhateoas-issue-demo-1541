@@ -4,19 +4,19 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.4.5")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.5.0")
     }
 }
-
 
 plugins {
     id 'application'
     id 'java'
-    id 'org.springframework.boot' version '2.4.5'
+    id 'org.springframework.boot' version '2.5.0'
 }
 
 group 'org.example.demo'
 version '1.0-SNAPSHOT'
+
 
 repositories {
     mavenCentral()
@@ -28,7 +28,7 @@ mainClassName = 'org.example.demo.DemoApplication'
 
 dependencies {
     implementation group: 'org.bouncycastle', name: 'bcpkix-jdk15to18', version: '1.68'
-    implementation platform(group: 'org.springframework.boot', name: 'spring-boot-dependencies', version: '2.4.5')
+    implementation platform(group: 'org.springframework.boot', name: 'spring-boot-dependencies', version: '2.5.0')
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-hateoas'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web'
