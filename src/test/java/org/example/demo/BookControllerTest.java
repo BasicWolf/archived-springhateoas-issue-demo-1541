@@ -14,7 +14,6 @@ import java.security.Security;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @WebMvcTest(BookController.class)
-@TestConstructor(autowireMode = TestConstructor.AutowireMode.ALL)
 class BookControllerTest {
     @Autowired
     private MockMvc mockMvc;
